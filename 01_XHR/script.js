@@ -9,13 +9,17 @@ button.addEventListener("click", () => {
   //     console.log(json);
   //     image.src = json.message;
   //   });
-  const xhr = new XMLHttpRequest()
+  const xhr = new XMLHttpRequest();
   console.log(xhr);
-  xhr.addEventListener('load', ()=> {
-  console.log(xhr);
-
-  })
-  xhr.open('GET', 'https://httpbin.org/anything')
-  xhr.send()
-
+  xhr.responseType = "json";
+  // xhr.addEventListener("load", () => {
+  //   console.log(xhr.response);
+  //   image.src = xhr.response.message;
+  // });
+  xhr.onload = () => {
+    console.log(xhr.response);
+    image.src = xhr.response.message;
+  }
+  xhr.open("GET", "https://dog.ceo/api/breeds/image/random");
+  xhr.send();
 });
