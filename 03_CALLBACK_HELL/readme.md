@@ -1,0 +1,15 @@
+- 00:00 - Introduction
+- 00:32 - Quick Recap
+- 03:59 - Use DummyJSON to get users' data
+- 07:06 - How to access the first object in the given array?
+- 07:30 - uuid()
+- 08:23 - Get posts by user id
+- 11:06 - Create a reusable code
+- 19:57 - Access user's posts using user id by sending a new request
+- 22:26 - Which data comes first?
+- 26:24 - Get comments using post id
+- 31:07 - Renaming to avoid confusion
+- 32:45 - Continue to get user id from comments and try to access user
+- 36:01 - Face the Callback Hell!
+- 38:34 - Next Video
+- 39:43 - Conclusion

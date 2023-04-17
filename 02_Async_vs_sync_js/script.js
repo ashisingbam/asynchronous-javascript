@@ -28,17 +28,17 @@ button.addEventListener("click", () => {
 //   console.log('hi');
 // }, 4000)
 
-// const blockingBtn = document.querySelector('.blocking-btn')
+const blockingBtn = document.querySelector('.blocking-btn')
 
-// blockingBtn.addEventListener('click', ()=> {
-//   const startTime = Date.now()
-//   let currentTime = startTime
+blockingBtn.addEventListener('click', ()=> {
+  const startTime = Date.now()
+  let currentTime = startTime
   
-//   while(startTime + 2000 > currentTime) {
-//     console.log('current');
-//     currentTime = Date.now()
-//   }
-// })
+  while(startTime + 2000 > currentTime) {
+    console.log('current');
+    currentTime = Date.now()
+  }
+})
 
 
 
