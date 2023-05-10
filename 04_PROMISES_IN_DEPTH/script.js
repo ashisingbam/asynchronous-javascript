@@ -16,6 +16,9 @@ const p2 = p.then((data) => {
 })
 p2.then((data) => {
   console.log(data);
+  if(data) {
+    throw 'Reject my promise'
+  }
   return 30
 }).then((data) => {
   console.log(data);
